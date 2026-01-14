@@ -6,61 +6,38 @@ import pandas as pd
 import logging
 
 def configure_fonts():
-    """Matplotlib のフォント設定（日本語対応 + 確実なフォールバック）"""
-
+    """Matplotlib のフォント設定（Unicode・多言語対応）"""
     logging.getLogger('matplotlib.font_manager').setLevel(logging.ERROR)
 
-    # --- 1. カスタムフォントの読み込み ---
+    # --- 1. フォントファイルの直接登録 (./fonts/ フォルダ) ---
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    custom_font_paths = [
-        os.path.join(base_dir, "fonts", "NotoSansJP-Regular.ttf"),
-        os.path.join(base_dir, "fonts", "NotoSans-Regular.ttf"),
-        os.path.join(base_dir, "fonts", "NotoSansKR-Regular.ttf"),
-        os.path.join(base_dir, "fonts", "NotoSansSC-Regular.ttf"),
-        os.path.join(base_dir, "fonts", "NotoSansTC-Regular.ttf"),
+    font_files = [
+        "NotoSans-Regular.ttf",
+        "NotoSansJP-Regular.ttf",
+        "NotoSansKR-Regular.ttf",
+        "NotoSansSC-Regular.ttf",
+        "NotoSansTC-Regular.ttf",
     ]
 
-    registered_fonts = []
-
-    for path in custom_font_paths:
+    for f_name in font_files:
+        path = os.path.join(base_dir, "fonts", f_name)
         if os.path.exists(path):
             try:
                 fm.fontManager.addfont(path)
-                prop = fm.FontProperties(fname=path)
-                registered_fonts.append(prop.get_name())
             except Exception:
                 pass
 
-    # --- 2. OS に応じた標準日本語フォント ---
-    system = platform.system()
-
-    fallback_fonts = []
-
-    if system == "Darwin":  # macOS
-        mac_font = "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc"
-        if os.path.exists(mac_font):
-            fallback_fonts.append(fm.FontProperties(fname=mac_font).get_name())
-
-    elif system == "Windows":
-        win_font = "C:/Windows/Fonts/msgothic.ttc"
-        if os.path.exists(win_font):
-            fallback_fonts.append(fm.FontProperties(fname=win_font).get_name())
-
-    else:  # Linux
-        linux_font = "/usr/share/fonts/truetype/ipafont-gothic/ipagp.ttf"
-        if os.path.exists(linux_font):
-            fallback_fonts.append(fm.FontProperties(fname=linux_font).get_name())
-
-    # --- 3. 最終フォント優先順の設定 ---
-    # custom > fallback Japanese > DejaVu Sans > generic sans-serif
-    final_fonts = registered_fonts + fallback_fonts + ['DejaVu Sans', 'sans-serif']
-
-    plt.rcParams['font.family'] = final_fonts
-
-    # --- 4. PDF / Unicode 安定化 ---
-    plt.rcParams['pdf.fonttype'] = 42
+    # --- 2. Unicode / PDF 安定化設定 ---
+    plt.rcParams['pdf.fonttype'] = 42           # TrueType 埋め込み
     plt.rcParams['ps.fonttype'] = 42
-    plt.rcParams['axes.unicode_minus'] = False
+    plt.rcParams['axes.unicode_minus'] = False  # マイナス記号の文字化け防止
+
+    # --- 3. フォントファミリーの優先順位設定 ---
+    # ここに記述した順番でフォントが探索されます
+    plt.rcParams['font.family'] = [
+        'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans',
+        'Hiragino Sans', 'Yu Gothic', 'MS Gothic', 'DejaVu Sans', 'sans-serif'
+    ]
 
 
 def process_dataframe_for_json(df_ind, df_rel, current_meta, layout_config):
