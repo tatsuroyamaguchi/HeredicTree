@@ -72,11 +72,13 @@ HeredicTree/
 │
 ├── app/
 │   ├── app.py                   # Main application / メインアプリケーション
-│   ├── dictionary.py            # UI translations / UI翻訳
 │   ├── drawer.py                # Chart rendering / チャート描画
 │   ├── engine.py                # Layout calculation / レイアウト計算
 │   ├── utils.py                 # Utility functions / ユーティリティ関数
+│   ├── parameter.py             # Parameter / パラメーター
 │   ├── json_data.py             # Sample datasets / サンプルデータ
+│   ├── pedigree_generator.py    # Easy Pedigree Generator / 簡易家系図作成
+│   ├── translation.py           # Multiple language / 多言語対応
 │   │
 │   └── fonts/                   # Font files / フォントファイル
 │       ├── NotoSans-Regular.ttf
