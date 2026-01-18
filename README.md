@@ -12,7 +12,8 @@ A web-based pedigree chart creation application following National Society of Ge
 - **NSGC-compliant notation** / NSGC準拠の記載法
 - **JSON-based data management** / JSONベースのデータ管理
 - **Multiple export formats** (SVG, PNG, PDF) / 複数の出力形式対応
-- **Bilingual interface** (English/Japanese) / バイリンガルインターフェース
+- **Bilingual interface** (English/Japanese/Español/Deutsch) / バイリンガルインターフェース
+- **Easy Pedigree Generator** / 簡易家系図作成機能
 - **Sample datasets included** / サンプルデータセット付属
 
 ---
@@ -77,7 +78,7 @@ HeredicTree/
 │   ├── utils.py                 # Utility functions / ユーティリティ関数
 │   ├── parameter.py             # Parameter / パラメーター
 │   ├── json_data.py             # Sample datasets / サンプルデータ
-│   ├── pedigree_generator.py    # Easy Pedigree Generator / 簡易家系図作成
+│   ├── pedigree_generator.py    # Easy Pedigree Generator / 簡易家系図作成機能
 │   ├── translation.py           # Multiple language / 多言語対応
 │   │
 │   └── fonts/                   # Font files / フォントファイル
@@ -160,7 +161,7 @@ See sample data files in `SampleData.py` for examples.
 ## Version History / バージョン履歴
 
 - **v20260107** - Initial public release / 初回公開リリース
-- **v20260118** - Easy Pedigree Generator / 簡易家系図作成搭載
+- **v20260118** - Easy Pedigree Generator / 簡易家系図作成機能搭載
 
 ---
 
