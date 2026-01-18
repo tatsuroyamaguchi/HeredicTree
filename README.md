@@ -2,7 +2,7 @@
 
 A web-based pedigree chart creation application following National Society of Genetic Counselors (NSGC) standards.
 
-家系図作成アプリケーション（遺伝カウンセリング学会標準記載法準拠）
+家系図作成アプリケーション（全米遺伝カウンセリング学会標準記載法準拠）
 
 ---
 
@@ -160,6 +160,7 @@ See sample data files in `SampleData.py` for examples.
 ## Version History / バージョン履歴
 
 - **v20260107** - Initial public release / 初回公開リリース
+- **v20260118** - Easy Pedigree Generator / 簡易家系図作成搭載
 
 ---
 
