@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;HeredicTree&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.css"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="root"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>stlite.mount(</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>requirements: ["streamlit", "pandas", "matplotlib"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>entrypoint: "app.py",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>files: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/* Pythonコードファイル */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"app.py": { url: "./app.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"drawer.py": { url: "./drawer.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"engine.py": { url: "./engine.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"json_data.py": { url: "./json_data.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"parameter.py": { url: "./parameter.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"pedigree_generator.py": { url: "./pedigree_generator.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"translation.py": { url: "./translation.py" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"utils.py": { url: "./utils.py" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/* フォントファイル (utils.pyの読み込みに対応) */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"fonts/NotoSansJP-Regular.ttf": { url: "./fonts/NotoSansJP-Regular.ttf" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>streamlitConfig: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"theme.primaryColor": "#FF4B4B",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"theme.backgroundColor": "#FFFFFF",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"server.runOnSave": false</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById("root")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
