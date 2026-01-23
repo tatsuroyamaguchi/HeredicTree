@@ -64,7 +64,7 @@ FONT_FILES = [
 
 # System font paths by OS
 SYSTEM_FONTS = {
-    "Darwin": "/System/Library/Fonts/Hiragino Sans GB.ttc",  # macOS
+    "Darwin": "",  # macOS
     "Windows": "C:/Windows/Fonts/msgothic.ttc",
     "Linux": "/usr/share/fonts/truetype/ipafont-gothic/ipagp.ttf"
 }
