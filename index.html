@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>HeredicTree</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.css"/>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.60.0/build/stlite.css"/>
+</head>
+<body>
     <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.60.0/build/stlite.js"></script>
     <script>
       stlite.mount(
         {
           requirements: ["streamlit", "pandas", "matplotlib"],
           entrypoint: "app.py",
           files: {
-            // Python Scripts
-            "app.py": { url: "./app.py" },
-            "drawer.py": { url: "./drawer.py" },
-            "engine.py": { url: "./engine.py" },
-            "json_data.py": { url: "./json_data.py" },
-            "parameter.py": { url: "/HeredicTree/parameter.py" },
-            "pedigree_generator.py": { url: "./pedigree_generator.py" },
-            "translation.py": { url: "./translation.py" },
-            "utils.py": { url: "./utils.py" },
-            
-            // Fonts (重要: リポジトリ内にfontsフォルダを作成し、その中にフォントファイルを置いてください)
-            "fonts/NotoSansJP-Regular.ttf": { url: "./fonts/NotoSansJP-Regular.ttf" },
+            "app.py": { url: "app.py" },
+            "drawer.py": { url: "drawer.py" },
+            "engine.py": { url: "engine.py" },
+            "json_data.py": { url: "json_data.py" },
+            "parameter.py": { url: "parameter.py" },
+            "pedigree_generator.py": { url: "pedigree_generator.py" },
+            "translation.py": { url: "translation.py" },
+            "utils.py": { url: "utils.py" },
+            "fonts/NotoSansJP-Regular.ttf": { url: "fonts/NotoSansJP-Regular.ttf" },
           },
-          streamlitConfig: {
-            "theme.primaryColor": "#FF4B4B",
-            "theme.backgroundColor": "#FFFFFF",
-            "server.runOnSave": false,
-            "layout": "wide"
-          }
         },
         document.getElementById("root")
       );
     </script>
-  </body>
+</body>
 </html>
