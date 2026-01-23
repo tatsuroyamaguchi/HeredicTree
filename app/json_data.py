@@ -660,7 +660,8 @@ REFERENCE_JSON = {
       "children": [
         "II-1",
         "II-3",
-        "II-4"
+        "II-4",
+        "II-5"
       ],
       "adopted_in": [],
       "adopted_out": [],
@@ -672,7 +673,6 @@ REFERENCE_JSON = {
       "p2": "I-4",
       "divorced": "D_p2",
       "children": [
-        "II-5",
         "II-6",
         "II-7",
         "II-8",
@@ -733,7 +733,7 @@ REFERENCE_JSON = {
     },
     {
       "p1": "II-1",
-      "p2": "II-5",
+      "p2": "II-6",
       "divorced": "",
       "children": [
         "III-2",
