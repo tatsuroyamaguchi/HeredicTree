@@ -16,7 +16,6 @@
           requirements: ["streamlit", "pandas", "matplotlib"],
           entrypoint: "app.py",
           files: {
-            /* Pythonコードファイル */
             "app.py": { url: "./app.py" },
             "drawer.py": { url: "./drawer.py" },
             "engine.py": { url: "./engine.py" },
@@ -25,8 +24,6 @@
             "pedigree_generator.py": { url: "./pedigree_generator.py" },
             "translation.py": { url: "./translation.py" },
             "utils.py": { url: "./utils.py" },
-            
-            /* フォントファイル (utils.pyの読み込みに対応) */
             "fonts/NotoSansJP-Regular.ttf": { url: "./fonts/NotoSansJP-Regular.ttf" },
           },
           streamlitConfig: {
