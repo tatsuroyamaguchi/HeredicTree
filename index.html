@@ -16,6 +16,7 @@
           requirements: ["streamlit", "pandas", "matplotlib"],
           entrypoint: "app.py",
           files: {
+            // Python Scripts
             "app.py": { url: "./app.py" },
             "drawer.py": { url: "./drawer.py" },
             "engine.py": { url: "./engine.py" },
@@ -24,12 +25,18 @@
             "pedigree_generator.py": { url: "./pedigree_generator.py" },
             "translation.py": { url: "./translation.py" },
             "utils.py": { url: "./utils.py" },
+            
+            // Data Files
+            "pedigree_data.json": { url: "./pedigree_data.json" },
+            
+            // Fonts (重要: リポジトリ内にfontsフォルダを作成し、その中にフォントファイルを置いてください)
             "fonts/NotoSansJP-Regular.ttf": { url: "./fonts/NotoSansJP-Regular.ttf" },
           },
           streamlitConfig: {
             "theme.primaryColor": "#FF4B4B",
             "theme.backgroundColor": "#FFFFFF",
-            "server.runOnSave": false
+            "server.runOnSave": false,
+            "layout": "wide"
           }
         },
         document.getElementById("root")
