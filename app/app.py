@@ -366,7 +366,7 @@ def prepare_relationships_dataframe():
     if "consanguinity" not in df_rel.columns:
         df_rel["consanguinity"] = False
     else:
-        df_rel["consanguinity"] = df_rel["consanguinity"].astype('string').fillna(False)
+        df_rel["consanguinity"] = df_rel["consanguinity"].fillna(False).astype('string')
         df_rel["consanguinity"] = df_rel["consanguinity"].map(
             lambda x: True if str(x).strip().lower() == 'true' or x is True else False
         )
