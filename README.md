@@ -6,6 +6,15 @@ A web-based pedigree chart creation application following National Society of Ge
 
 ---
 
+## 🚀 Use Online / ブラウザで今すぐ使う
+
+You can use HeredicTree directly in your web browser without any installation.  
+インストール不要で、以下のリンクからすぐに利用できます。
+
+👉 **[https://tatsuroyamaguchi.github.io/HeredicTree/](https://tatsuroyamaguchi.github.io/HeredicTree/)**
+
+---
+
 ## Features / 機能
 
 - **Interactive pedigree chart creation** / インタラクティブな家系図作成
@@ -69,6 +78,7 @@ Access the application at: **http://localhost:8080**
 HeredicTree/
 ├── README.md                    # This file / このファイル
 ├── Dockerfile                   # Docker configuration / Docker設定
+├── index.html                   # Entry point for GitHub Pages / Web版エントリポイント
 ├── requirements.txt             # Python dependencies / Python依存関係
 │
 ├── app/
@@ -160,8 +170,9 @@ See sample data files in `SampleData.py` for examples.
 
 ## Version History / バージョン履歴
 
-- **v20260107** - Initial public release / 初回公開リリース
+- **v20260124** - Web version released (Stlite) / Web版公開
 - **v20260118** - Easy Pedigree Generator / 簡易家系図作成機能搭載
+- **v20260107** - Initial public release / 初回公開リリース
 
 ---
 
@@ -253,4 +264,4 @@ For questions or licensing inquiries, please open an issue on GitHub.
 
 **HeredicTree** - Professional Pedigree Chart Creation Tool
 
-Copyright (c) 2025 Tatsuro Yamaguchi
+Copyright (c) 2026 Tatsuro Yamaguchi
