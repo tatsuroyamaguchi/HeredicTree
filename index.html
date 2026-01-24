@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>HeredicTree</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.css"/>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.53.0/build/stlite.js"></script>
+    <script>
+      stlite.mount(
+        {
+          requirements: ["streamlit", "pandas", "matplotlib"],
+          entrypoint: "app.py",
+          files: {
+            // Python Scripts
+            "app.py": { url: "./app/app.py" },
+            "drawer.py": { url: "./app/drawer.py" },
+            "engine.py": { url: "./app/engine.py" },
+            "parameter.py": { url: "./app/parameter.py" },
+            "pedigree_generator.py": { url: "./app/pedigree_generator.py" },
+            "translation.py": { url: "./app/translation.py" },
+            "utils.py": { url: "./app/utils.py" },
+
+            // README
+            "README.md": { url: "./README.md" },
+
+            // Fonts (重要: リポジトリ内にfontsフォルダを作成し、その中にフォントファイルを置いてください)
+            "fonts/NotoSans-Regular.ttf": { url: "./app/fonts/NotoSans-Regular.ttf" },
+            "fonts/NotoSansJP-Regular.ttf": { url: "./app/fonts/NotoSansJP-Regular.ttf" },
+            "fonts/NotoSansKR-Regular.ttf": { url: "./app/fonts/NotoSansKR-Regular.ttf" },
+            "fonts/NotoSansSC-Regular.ttf": { url: "./app/fonts/NotoSansSC-Regular.ttf" },
+            "fonts/NotoSansTC-Regular.ttf": { url: "./app/fonts/NotoSansTC-Regular.ttf" },
+
+            // Example
+            "examples/0. Reference.json": { url: "./app/examples/0. Reference.json" },
+            "examples/1. Simple_Pedigree.json": { url: "./app/examples/1. Simple_Pedigree.json" },
+            "examples/2. Habsburg_Pedigree.json": { url: "./app/examples/2. Habsburg_Pedigree.json" },
+            "examples/3. Einstein_Pedigree.json": { url: "./app/examples/3. Einstein_Pedigree.json" },
+            "examples/4. Angelina_Jolie.json": { url: "./app/examples/4. Angelina_Jolie.json" },
+            "examples/5. サザエさん.json": { url: "./app/examples/5. サザエさん.json" },
+
+            // Images
+            "img/Abortion.jpg": { url: "./app/img/Abortion.jpg" },
+            "img/Adoption.jpg": { url: "./app/img/Adoption.jpg" },
+            "img/Affected_status.jpg": { url: "./app/img/Affected_status.jpg" },
+            "img/Comments.jpg": { url: "./app/img/Comments.jpg" },
+            "img/Consanguinity.jpg": { url: "./app/img/Consanguinity.jpg" },
+            "img/Divorce.jpg": { url: "./app/img/Divorce.jpg" },
+            "img/Donor.jpg": { url: "./app/img/Donor.jpg" },
+            "img/Gender.jpg": { url: "./app/img/Gender.jpg" },
+            "img/Infertilty.jpg": { url: "./app/img/Infertilty.jpg" },
+            "imag/Multiple_Children.jpg": { url: "./app/img/Multiple_Children.jpg" },
+            "img/Multiple.jpg": { url: "./app/img/Multiple.jpg" },
+            "img/Proband.jpg": { url: "./app/img/Proband.jpg" },
+            "img/Sex.jpg": { url: "./app/img/Sex.jpg" },
+            "img/Surrogate.jpg": { url: "./app/img/Surrogate.jpg" }
+          },
+          streamlitConfig: {
+            "theme.primaryColor": "#FF4B4B",
+            "theme.backgroundColor": "#FFFFFF",
+            "server.runOnSave": false,
+            "layout": "wide"
+          }
+        },
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,605 @@
+{
+  "meta": {
+    "comments": "Dissolution on November 29, 1780"
+  },
+  "layout": {
+    "partner_spacing": 1.0,
+    "min_sib_spacing": 1.0,
+    "gen_height": 4.0,
+    "family_gap": 0.0,
+    "u_shape_offset": 3.0,
+    "adjustment_iterations": 1,
+    "symbol_size": 1.0,
+    "line_width": 1.0,
+    "font_size": 6,
+    "label_offset": 0.5,
+    "layout_priority": "Children to Parents (Top-down)",
+    "node_width": 1
+  },
+  "individual": [
+    {
+      "id": "I-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Philip I of\nCastile",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "I-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Joanna of\nCastile",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Charles V,\nHoly Roman Emperor",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Isabella of\nPortugal",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Ferdinand I,\nHoly Roman Emperor",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Anna of Bohemia\nand Hungary",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-5",
+      "gender": "F",
+      "affected": "",
+      "label": "Isabella of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-6",
+      "gender": "M",
+      "affected": "",
+      "label": "Christian II of\nDenmark",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Philip II of\nSpain",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Maria of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Maximilian II,\nHoly Roman Emperor",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-4",
+      "gender": "M",
+      "affected": "",
+      "label": "Charles II of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-5",
+      "gender": "F",
+      "affected": "",
+      "label": "Anna of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-6",
+      "gender": "M",
+      "affected": "",
+      "label": "Albrecht V,\nDuke of Bavaria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-7",
+      "gender": "F",
+      "affected": "",
+      "label": "Christina of\nDenmark",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-8",
+      "gender": "M",
+      "affected": "",
+      "label": "Francis I,\nDuke of Lorraine",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-1",
+      "gender": "F",
+      "affected": "",
+      "label": "Anna of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Maria Anna of\nBavaria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-3",
+      "gender": "M",
+      "affected": "",
+      "label": "William V,\nDuke of Bavaria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Renata of\nLorraine",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Philip III of\nSpain",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Margaret of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Ferdinand II,\nHoly Roman Emperor",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Maria Anna of\nBavaria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Philip IV of\nSpain",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-2",
+      "gender": "F",
+      "affected": "",
+      "label": "Maria Anna of\nSpain",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Ferdinand III,\nHoly Roman Emperor",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VII-1",
+      "gender": "F",
+      "affected": "",
+      "label": "Mariana of\nAustria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Charles II of\nSpain",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    }
+  ],
+  "relationships": [
+    {
+      "p1": "I-1",
+      "p2": "I-2",
+      "divorced": "",
+      "children": [
+        "II-1",
+        "II-3",
+        "II-5"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "II-1",
+      "p2": "II-2",
+      "divorced": "",
+      "children": [
+        "III-1",
+        "III-2"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "II-3",
+      "p2": "II-4",
+      "divorced": "",
+      "children": [
+        "III-3",
+        "III-4",
+        "III-5"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "II-5",
+      "p2": "II-6",
+      "divorced": "",
+      "children": [
+        "III-7"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-2",
+      "p2": "III-3",
+      "divorced": "",
+      "children": [
+        "IV-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "III-5",
+      "p2": "III-6",
+      "divorced": "",
+      "children": [
+        "IV-2",
+        "IV-3"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-7",
+      "p2": "III-8",
+      "divorced": "",
+      "children": [
+        "IV-4"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-1",
+      "p2": "IV-1",
+      "divorced": "",
+      "children": [
+        "V-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "III-4",
+      "p2": "IV-2",
+      "divorced": "",
+      "children": [
+        "V-2",
+        "V-3"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "IV-3",
+      "p2": "IV-4",
+      "divorced": "",
+      "children": [
+        "V-4"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "V-1",
+      "p2": "V-2",
+      "divorced": "",
+      "children": [
+        "VI-1",
+        "VI-2"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "V-3",
+      "p2": "V-4",
+      "divorced": "",
+      "children": [
+        "VI-3"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "VI-2",
+      "p2": "VI-3",
+      "divorced": "",
+      "children": [
+        "VII-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "VI-1",
+      "p2": "VII-1",
+      "divorced": "",
+      "children": [
+        "VIII-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    }
+  ]
+}
