@@ -17,6 +17,9 @@ LAYOUT_PARAMS = {
     'fs_slider': ('font_size', 10, int),
     'lo_slider': ('label_offset', 0.5, float),
     'lp_radio': ('layout_priority', "Children to Parents (Top-down)", str),
+    # --- ADDED THESE TWO LINES ---
+    'as_slider': ('arrow_size', 12, int),
+    'pbs_slider': ('proband_size', 12, int),
 }
 
 # Roman numeral mapping for generation parsing
@@ -42,7 +45,10 @@ DEFAULT_LAYOUT = {
     "line_width": 1.5,
     "font_size": 10,
     "label_offset": 0.2,
-    "node_width": 1
+    "node_width": 1,
+    # --- ADDED DEFAULTS ---
+    "arrow_size": 12,
+    "proband_size": 12
 }
 
 # Generation labels
@@ -97,4 +103,3 @@ AFFECTED_COLORS = {
     "A4-3": "#999999",
     "A4-4": "#CCCCCC"
 }
-
