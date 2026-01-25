@@ -117,7 +117,7 @@ HeredicTree/
 │       ├── NotoSansKR-Regular.ttf
 │       ├── NotoSansSC-Regular.ttf
 │       └── NotoSansTC-Regular.ttf
-│   └── examples/                 # Example files / サンプルファイル
+│   └── samples/                 # Sample files / サンプルファイル
 │       ├── 1. Simple_Pedigree.json
 │       ├── 2. Habsburg_Pedigree.json
 │       ├── 3. Angelina_Jolie.json
