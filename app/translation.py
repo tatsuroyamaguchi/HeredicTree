@@ -3,7 +3,7 @@ import streamlit as st
 LANGUAGES = {
     "English": {
         "title": "HeredicTree",
-        "how_to_use": "1. Upload a JSON file via the sidebar or use the Easy Pedigree Generator.  \n2. Edit individuals and relationships in Edit Data (Table View).  \n3. Save data with **Save Data (JSON)**  \n\
+        "how_to_use": "1. Upload a JSON file via the sidebar or use the Easy Pedigree Generator.  \n2. Edit individuals and relationships in Edit Data (Table View).  \n3. Save data with **Save Data (JSON)** \n\
             ---  \n\
             Reference: **[National Society of Genetic Counselors (NSGC) Guidelines](https://onlinelibrary.wiley.com/doi/10.1002/jgc4.1621)**",
         "language": "English",
@@ -46,6 +46,10 @@ LANGUAGES = {
         "help_fs": "Font size of the labels in the pedigree chart.",
         "label_lo": "11. Label vertical position",
         "help_lo": "Vertical position adjustment for labels in the pedigree chart.",
+        "label_as": "12. Client arrow size",
+        "help_as": "Size of the arrow indicating the client (consultand).",
+        "label_pbs": "13. Proband 'P' size",
+        "help_pbs": "Font size of the 'P' indicating the proband.",
         "expander_edit": "Edit Data (Table View)",
         "sub_meta": "Metadata",
         "comments_label": "Comments",
@@ -101,6 +105,10 @@ LANGUAGES = {
         "help_fs": "家系図上のラベルのフォントサイズを設定します。",
         "label_lo": "11. ラベルの垂直位置",
         "help_lo": "家系図上のラベルの垂直位置を調整します。",
+        "label_as": "12. クライアント矢印サイズ",
+        "help_as": "来談者（Client）を示す矢印の大きさを設定します。",
+        "label_pbs": "13. 発端者(P)サイズ",
+        "help_pbs": "発端者を示す「P」の文字サイズを設定します。",
         "expander_edit": "データ編集（テーブル表示）",
         "sub_meta": "メタデータ",
         "comments_label": "備考・コメント",
@@ -113,7 +121,7 @@ LANGUAGES = {
     },
     "Español": {
         "title": "HeredicTree",
-        "how_to_use": "1. Sube un archivo JSON desde la barra lateral o utiliza el Easy Pedigree Generator.  \n2. Edita individuos y relaciones en la Edit Data (Table View) a continuación.  \n3. Guarda los datos con **Save Data (JSON)**  \n\
+        "how_to_use": "1. Sube un archivo JSON desde la barra lateral o utiliza el Easy Pedigree Generator.  \n2. Edita individuos y relaciones en la Edit Data (Table View) a continuación.  \n3. Guarda los datos con **Save Data (JSON)** \n\
         ---  \n\
         Referencia: **[National Society of Genetic Counselors (NSGC) Guidelines](https://onlinelibrary.wiley.com/doi/10.1002/jgc4.1621)**",
         "language": "Español",
@@ -156,6 +164,10 @@ LANGUAGES = {
         "help_fs": "Tamaño de fuente de las etiquetas en el gráfico de pedigree.",
         "label_lo": "11. Posición vertical de la etiqueta",
         "help_lo": "Ajuste de la posición vertical de las etiquetas en el gráfico de pedigree.",
+        "label_as": "12. Tamaño de flecha (Cliente)",
+        "help_as": "Tamaño de la flecha que indica el cliente.",
+        "label_pbs": "13. Tamaño de 'P' (Probando)",
+        "help_pbs": "Tamaño de fuente de la 'P' que indica el probando.",
         "expander_edit": "Editar datos (vista de tabla)",
         "sub_meta": "Metadatos",
         "comments_label": "Comentarios",
@@ -168,7 +180,7 @@ LANGUAGES = {
     },
     "Deutsch": {
         "title": "HeredicTree",
-        "how_to_use": "1. Laden Sie eine JSON-Datei über die Seitenleiste hoch oder verwenden Sie den Easy Pedigree Generator.  \n2. Bearbeiten Sie Personen und Beziehungen in der Edit Data (Table View).  \n3. Speichern Sie die Daten mit **Save Data (JSON)**  \n\
+        "how_to_use": "1. Laden Sie eine JSON-Datei über die Seitenleiste hoch oder verwenden Sie den Easy Pedigree Generator.  \n2. Bearbeiten Sie Personen und Beziehungen in der Edit Data (Table View).  \n3. Speichern Sie die Daten mit **Save Data (JSON)** \n\
         ---  \n\
         Referenz: **[National Society of Genetic Counselors (NSGC) Guidelines](https://onlinelibrary.wiley.com/doi/10.1002/jgc4.1621)**",
         "language": "Deutsch",
@@ -211,6 +223,10 @@ LANGUAGES = {
         "help_fs": "Schriftgröße der Beschriftungen im Pedigree-Diagramm.",
         "label_lo": "11. Vertikale Position der Beschriftung",
         "help_lo": "Vertikale Positionsanpassung für Beschriftungen im Pedigree-Diagramm.",
+        "label_as": "12. Pfeilgröße (Klient)",
+        "help_as": "Größe des Pfeils, der den Klienten anzeigt.",
+        "label_pbs": "13. Größe 'P' (Proband)",
+        "help_pbs": "Schriftgröße des 'P', das den Probanden anzeigt.",
         "expander_edit": "Daten bearbeiten (Tabellenansicht)",
         "sub_meta": "Metadaten",
         "comments_label": "Kommentare",
