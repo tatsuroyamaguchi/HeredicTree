@@ -1,4 +1,12 @@
 import streamlit as st
+import os
+
+# Docker: "./app/img/"
+# GitHub Pages (stlite): "img/"
+if os.path.exists("./app/img"):
+    IMG_BASE = "./app/img/"
+else:
+    IMG_BASE = "img/"
 
 def render_instructions(L):
     """Render instructions expander."""
@@ -7,7 +15,7 @@ def render_instructions(L):
         st.markdown("##### Sex")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Sex.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Sex.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -23,7 +31,7 @@ def render_instructions(L):
         st.markdown("##### Gender")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Gender.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Gender.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -39,7 +47,7 @@ def render_instructions(L):
         st.markdown("##### Proband/Client")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Proband.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Proband.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -55,7 +63,7 @@ def render_instructions(L):
         st.markdown("##### Multiple Children")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Multiple_Children.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Multiple_Children.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -71,7 +79,7 @@ def render_instructions(L):
         st.markdown("##### Affected Status")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Affected_status.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Affected_status.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -88,7 +96,7 @@ def render_instructions(L):
         st.markdown("##### Pregnancy")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Pregnancy.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Pregnancy.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -102,7 +110,7 @@ def render_instructions(L):
         st.markdown("##### Abortion")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Abortion.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Abortion.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -117,7 +125,7 @@ def render_instructions(L):
         st.markdown("##### Divorce")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Divorce.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Divorce.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -132,7 +140,7 @@ def render_instructions(L):
         st.markdown("##### Multiple Births")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Multiple.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Multiple.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -147,7 +155,7 @@ def render_instructions(L):
         st.markdown("##### Infertilty/No Children")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Infertilty.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Infertilty.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -162,7 +170,7 @@ def render_instructions(L):
         st.markdown("##### Donor")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Donor.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Donor.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -177,7 +185,7 @@ def render_instructions(L):
         st.markdown("##### Surrogate")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Surrogate.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Surrogate.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -192,7 +200,7 @@ def render_instructions(L):
         st.markdown("##### Adoption")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Adoption.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Adoption.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -207,7 +215,7 @@ def render_instructions(L):
         st.markdown("##### Consanguinity")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Consanguinity.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Consanguinity.jpg", width=400)
         with col2:
             st.markdown("""
             ```
@@ -221,7 +229,7 @@ def render_instructions(L):
         st.markdown("##### Comments / Metadata")
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.image("./app/img/Comments.jpg", use_container_width=True)
+            st.image(f"{IMG_BASE}Comments.jpg", width=400)
         with col2:
             st.markdown("""
             ```
