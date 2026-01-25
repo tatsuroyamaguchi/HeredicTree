@@ -1,0 +1,572 @@
+{
+  "meta": {
+    "comments": "Einstein Pedigree"
+  },
+  "layout": {
+    "partner_spacing": 5.0,
+    "min_sib_spacing": 2.0,
+    "gen_height": 4.0,
+    "family_gap": 1.0,
+    "u_shape_offset": 2.0,
+    "adjustment_iterations": 1,
+    "symbol_size": 1.0,
+    "line_width": 1.5,
+    "font_size": 10,
+    "label_offset": 0.5,
+    "layout_priority": "Children to Parents (Top-down)",
+    "node_width": 1
+  },
+  "individual": [
+    {
+      "id": "I-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Naftali",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "II-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Ruppert",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Abraham",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Raphael",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "III-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Julius Koch",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Hermann",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Rudolf",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-3",
+      "gender": "F",
+      "affected": "",
+      "label": "Pauline",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IV-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Fanny",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-1",
+      "gender": "F",
+      "affected": "",
+      "label": "Maria",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Albert",
+      "proband": true,
+      "client": true,
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-3",
+      "gender": "F",
+      "affected": "",
+      "label": "Mileva",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "V-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Elsa",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-1",
+      "gender": "F",
+      "affected": "",
+      "label": "Lieserl",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Hans",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Eduard",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Lise",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VI-5",
+      "gender": "F",
+      "affected": "",
+      "label": "Margot",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VII-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Bernhard",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VII-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Klaus",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VII-3",
+      "gender": "M",
+      "affected": "",
+      "label": "David",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VII-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Evelyn",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": true,
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-1",
+      "gender": "M",
+      "affected": "",
+      "label": "Thomas",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-2",
+      "gender": "M",
+      "affected": "",
+      "label": "Paul",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-3",
+      "gender": "M",
+      "affected": "",
+      "label": "Eduard",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-4",
+      "gender": "F",
+      "affected": "",
+      "label": "Mira",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "VIII-5",
+      "gender": "M",
+      "affected": "",
+      "label": "Charles",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    },
+    {
+      "id": "IX-1",
+      "gender": "N3",
+      "affected": "",
+      "label": "",
+      "proband": "",
+      "client": "",
+      "carrier": "",
+      "documented": "",
+      "deceased": "",
+      "pregnancy": "",
+      "donor": "",
+      "surrogate": ""
+    }
+  ],
+  "relationships": [
+    {
+      "p1": "I-1",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "II-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "II-1",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "III-1",
+        "III-2"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-1",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "IV-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-2",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "IV-2"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "III-3",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "IV-3",
+        "IV-4"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "IV-1",
+      "p2": "IV-3",
+      "divorced": "",
+      "children": [
+        "V-1",
+        "V-2"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "IV-2",
+      "p2": "IV-4",
+      "divorced": "",
+      "children": [
+        "V-4"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "V-2",
+      "p2": "V-3",
+      "divorced": "D_p2",
+      "children": [
+        "VI-1",
+        "VI-2",
+        "VI-3"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "V-2",
+      "p2": "V-4",
+      "divorced": "",
+      "children": [
+        "VI-4",
+        "VI-5"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": true
+    },
+    {
+      "p1": "VI-2",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "VII-1",
+        "VII-2",
+        "VII-3",
+        "VII-4"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "VII-1",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "VIII-1",
+        "VIII-2",
+        "VIII-3",
+        "VIII-4",
+        "VIII-5"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    },
+    {
+      "p1": "VIII-1",
+      "p2": null,
+      "divorced": "",
+      "children": [
+        "IX-1"
+      ],
+      "multiples": [],
+      "adopted_in": [],
+      "adopted_out": [],
+      "consanguinity": false
+    }
+  ]
+}
