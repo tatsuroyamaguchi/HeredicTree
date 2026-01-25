@@ -54,6 +54,11 @@ def draw_symbol(ax, x, y, engine_node, config, display_number=None):
     fsize = config['font_size']
     label_offset = config['label_offset']
     
+    # --- ADDED: Extract independent sizes with fallback ---
+    arrow_size = config.get('arrow_size', 12)
+    proband_size = config.get('proband_size', 12)
+    # ---------------------------------------------------
+
     hs = size / 2 
     
     # 2. Base Shape
@@ -119,9 +124,6 @@ def draw_symbol(ax, x, y, engine_node, config, display_number=None):
                 clip_rect = Rectangle((x - hs, y), hs, hs, transform=ax.transData)
                 add_overlay(patch, ax, clip_rect, color='#CCCCCC')
         
-        # if "C" in affected_list:
-        #     ax.add_line(Line2D([x, x], [y-hs*0.9, y+hs*0.9], color='black', lw=lw, zorder=11))
-        
     # 4. Other Indicators
     if is_donor:
         # Determine text color based on fill
@@ -145,16 +147,20 @@ def draw_symbol(ax, x, y, engine_node, config, display_number=None):
         ax.add_line(Line2D([x-hs, x+hs], [y+0.4, y+0.4], color='black', lw=lw))
 
     if proband:
+        # --- MODIFIED: Use proband_size ---
         ax.annotate("P", xy=(x - hs, y), xytext=(x - hs - 1, y - 0.4), 
-                    color='black', fontsize=fsize*1.2, zorder=15)
+                    color='black', fontsize=proband_size, zorder=15)
+        # ----------------------------------
         
     if client:
-        scale_factor = fsize / 12.0
+        # --- MODIFIED: Use arrow_size ---
+        scale_factor = arrow_size / 12.0
         arrow_dist = 0.75 * scale_factor
         ax.annotate("", xy=(x - hs, y), 
                     xytext=(x - hs - arrow_dist, y - arrow_dist),
-                    arrowprops=dict(arrowstyle="->", color='black', lw=lw, mutation_scale=fsize), 
+                    arrowprops=dict(arrowstyle="->", color='black', lw=lw, mutation_scale=arrow_size), 
                     zorder=15)
+        # --------------------------------
 
     if documented:
         # シンボルの右下に"*"を表示
