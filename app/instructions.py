@@ -1,8 +1,7 @@
 import streamlit as st
 import os
 
-# 環境に応じて画像パスのプレフィックスを自動判定
-# Docker環境: "./app/img/"
+# Docker: "./app/img/"
 # GitHub Pages (stlite): "img/"
 if os.path.exists("./app/img"):
     IMG_BASE = "./app/img/"
@@ -19,8 +18,10 @@ def render_instructions(L):
             st.markdown(f"##### {title}")
             col1, col2 = st.columns([1, 2])
             with col1:
-                # use_container_width=True でカラム幅に合わせて自動リサイズ（重なり防止）
-                st.image(f"{IMG_BASE}{img_name}", use_container_width=True)
+                try:
+                    st.image(f"{IMG_BASE}{img_name}", use_container_width=True)
+                except TypeError:
+                    st.image(f"{IMG_BASE}{img_name}", use_column_width=True)
             with col2:
                 st.markdown(code_content)
 
