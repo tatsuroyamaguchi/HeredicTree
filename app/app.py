@@ -262,6 +262,14 @@ def render_layout_settings(L):
         'label_offset': st.sidebar.number_input(
             L["label_lo"], 0.0, 2.0, step=0.1, key="lo_slider", help=L["help_lo"]
         ),
+        # --- NEW SLIDERS ADDED BELOW ---
+        'arrow_size': st.sidebar.number_input(
+            L["label_as"], 5, 30, step=1, key="as_slider", help=L["help_as"]
+        ),
+        'proband_size': st.sidebar.number_input(
+            L["label_pbs"], 5, 30, step=1, key="pbs_slider", help=L["help_pbs"]
+        ),
+        # ------------------------------
     }
     
     config = {
