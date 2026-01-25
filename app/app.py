@@ -262,14 +262,12 @@ def render_layout_settings(L):
         'label_offset': st.sidebar.number_input(
             L["label_lo"], 0.0, 2.0, step=0.1, key="lo_slider", help=L["help_lo"]
         ),
-        # --- NEW SLIDERS ADDED BELOW ---
         'arrow_size': st.sidebar.number_input(
             L["label_as"], 5, 30, step=1, key="as_slider", help=L["help_as"]
         ),
         'proband_size': st.sidebar.number_input(
             L["label_pbs"], 5, 30, step=1, key="pbs_slider", help=L["help_pbs"]
         ),
-        # ------------------------------
     }
     
     config = {
@@ -304,6 +302,7 @@ def render_data_editor():
                 "gender": st.column_config.TextColumn("gender", default=""),
                 "affected": st.column_config.TextColumn("affected", default=""),
                 "label": st.column_config.TextColumn("label", default=""),
+                "note_idv": st.column_config.TextColumn("note for individuals", default="", help="Internal note/memo. Not displayed in the chart.", width="medium"),
                 "deceased": st.column_config.CheckboxColumn("deceased", default=False),
                 "proband": st.column_config.CheckboxColumn("proband", default=False),
                 "client": st.column_config.CheckboxColumn("client", default=False),
@@ -322,6 +321,9 @@ def render_data_editor():
             column_config={
                 "consanguinity": st.column_config.CheckboxColumn(
                     "consanguinity", default=False
+                ),
+                "note_rel": st.column_config.TextColumn(
+                    "note for relationships", default="", help="Internal note for relationship.", width="medium"
                 ),
             }
         )
