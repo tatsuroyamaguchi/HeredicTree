@@ -214,60 +214,31 @@ def render_layout_settings(L):
     st.sidebar.subheader(L["sub_spacing"])
     
     spacing_inputs = {
-        'partner_spacing': st.sidebar.number_input(
-            L["label_ps"], 1.0, 20.0, step=0.5, key="ps_slider", help=L["help_ps"]
-        ),
-        'min_sib_spacing': st.sidebar.number_input(
-            L["label_ms"], 0.5, 20.0, step=0.5, key="ms_slider", help=L["help_ms"]
-        ),
-        'gen_height': st.sidebar.number_input(
-            L["label_gh"], 1.0, 30.0, step=0.5, key="gh_slider", help=L["help_gh"]
-        ),
-        'family_gap': st.sidebar.number_input(
-            L["label_fg"], -10.0, 30.0, step=0.5, key="fg_slider", help=L["help_fg"]
-        ),
-        'u_shape_offset': st.sidebar.number_input(
-            L["label_uso"], 0.5, 20.0, step=0.1, key="uso_slider", help=L["help_uso"]
-        ),
-        'adjustment_iterations': st.sidebar.number_input(
-            L["label_ai"], 1, 20, step=1, key="ai_slider", help=L["help_ai"]
-        ),
+        'partner_spacing': st.sidebar.number_input(L["label_ps"], 1.0, 20.0, step=0.5, key="ps_slider", help=L["help_ps"]),
+        'min_sib_spacing': st.sidebar.number_input(L["label_ms"], 0.5, 20.0, step=0.5, key="ms_slider", help=L["help_ms"]),
+        'gen_height': st.sidebar.number_input(L["label_gh"], 1.0, 30.0, step=0.5, key="gh_slider", help=L["help_gh"]),
+        'family_gap': st.sidebar.number_input(L["label_fg"], -10.0, 30.0, step=0.5, key="fg_slider", help=L["help_fg"]),
+        'u_shape_offset': st.sidebar.number_input(L["label_uso"], 0.5, 20.0, step=0.1, key="uso_slider", help=L["help_uso"]),
+        'adjustment_iterations': st.sidebar.number_input(L["label_ai"], 1, 20, step=1, key="ai_slider", help=L["help_ai"]),
     }
     
     layout_priority_display = st.sidebar.radio(
-        L["label_lp"],
-        options=L["lp_options"],
-        key="lp_radio_display",
-        help=L["help_lp"]
+        L["label_lp"], options=L["lp_options"], key="lp_radio_display", help=L["help_lp"]
     )
     
     layout_priority = (
-        "Children to Parents (Top-down)"
-        if layout_priority_display == L["lp_options"][0]
-        else "Parents to Children (Bottom-up)"
+        "Children to Parents (Top-down)" if layout_priority_display == L["lp_options"][0] else "Parents to Children (Bottom-up)"
     )
     
     st.sidebar.subheader(L["sub_visual"])
     
     visual_inputs = {
-        'symbol_size': st.sidebar.number_input(
-            L["label_ss"], 0.1, 5.0, step=0.1, key="ss_slider", help=L["help_ss"]
-        ),
-        'line_width': st.sidebar.number_input(
-            L["label_lw"], 0.5, 5.0, step=0.1, key="lw_slider", help=L["help_lw"]
-        ),
-        'font_size': st.sidebar.number_input(
-            L["label_fs"], 5, 20, step=1, key="fs_slider", help=L["help_fs"]
-        ),
-        'label_offset': st.sidebar.number_input(
-            L["label_lo"], 0.0, 2.0, step=0.1, key="lo_slider", help=L["help_lo"]
-        ),
-        'arrow_size': st.sidebar.number_input(
-            L["label_as"], 5, 30, step=1, key="as_slider", help=L["help_as"]
-        ),
-        'proband_size': st.sidebar.number_input(
-            L["label_pbs"], 5, 30, step=1, key="pbs_slider", help=L["help_pbs"]
-        ),
+        'symbol_size': st.sidebar.number_input(L["label_ss"], 0.1, 5.0, step=0.1, key="ss_slider", help=L["help_ss"]),
+        'line_width': st.sidebar.number_input(L["label_lw"], 0.5, 5.0, step=0.1, key="lw_slider", help=L["help_lw"]),
+        'label_offset': st.sidebar.number_input(L["label_lo"], 0.0, 2.0, step=0.1, key="lo_slider", help=L["help_lo"]),
+        'font_size': st.sidebar.number_input(L["label_fs"], 5, 20, step=1, key="fs_slider", help=L["help_fs"]),
+        'arrow_size': st.sidebar.number_input(L["label_as"], 5, 30, step=1, key="as_slider", help=L["help_as"]),
+        'proband_size': st.sidebar.number_input(L["label_pbs"], 5, 30, step=1, key="pbs_slider", help=L["help_pbs"]),
     }
     
     config = {
