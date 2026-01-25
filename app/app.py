@@ -38,7 +38,7 @@ def initialize_session_state():
     initial_json = fallback_json
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        example_path = os.path.join(current_dir, "examples", "1. Simple_Pedigree.json")
+        example_path = os.path.join(current_dir, "samples", "1. Simple_Pedigree.json")
         
         if os.path.exists(example_path):
             with open(example_path, "r", encoding="utf-8") as f:
@@ -168,7 +168,7 @@ def render_sidebar_data_loader(L):
     )
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    example_dir = os.path.join(current_dir, "examples")
+    example_dir = os.path.join(current_dir, "samples")
     example_files = []
     
     if os.path.exists(example_dir):
