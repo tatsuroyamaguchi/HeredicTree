@@ -1,7 +1,8 @@
 import streamlit as st
 import os
 
-# Docker: "./app/img/"
+# 環境に応じて画像パスのプレフィックスを自動判定
+# Docker環境: "./app/img/"
 # GitHub Pages (stlite): "img/"
 if os.path.exists("./app/img"):
     IMG_BASE = "./app/img/"
@@ -12,12 +13,20 @@ def render_instructions(L):
     """Render instructions expander."""
     with st.expander("**How to Use**", expanded=False):
         st.markdown(L["how_to_use"])
-        st.markdown("##### Sex")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Sex.jpg", width=400)
-        with col2:
-            st.markdown("""
+        
+        # Helper function to render sections cleanly
+        def render_section(title, img_name, code_content):
+            st.markdown(f"##### {title}")
+            col1, col2 = st.columns([1, 2])
+            with col1:
+                # use_container_width=True でカラム幅に合わせて自動リサイズ（重なり防止）
+                st.image(f"{IMG_BASE}{img_name}", use_container_width=True)
+            with col2:
+                st.markdown(code_content)
+
+        # --- Sections ---
+
+        render_section("Sex", "Sex.jpg", """
             ```
             Individuals Table:   Relationships Table:
             |id  |gender|        |p1 |p2 |children      |
@@ -28,12 +37,8 @@ def render_instructions(L):
             |II-3|N     |        Non-binary
             ```
             """)
-        st.markdown("##### Gender")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Gender.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Gender", "Gender.jpg", """
             ```
             Individuals Table:  Relationships Table:
             |id  |gender|       |p1 |p2 |children      |
@@ -44,12 +49,8 @@ def render_instructions(L):
             |II-3|N     |       UAAB: Unassigned At Birth
             ```
             """)
-        st.markdown("##### Proband/Client")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Proband.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Proband/Client", "Proband.jpg", """
             ```
             Individuals Table:                 Relationships Table:
             |id   |gender|proband|client|       |p1  |p2  |children|
@@ -60,12 +61,8 @@ def render_instructions(L):
             |III-1|I     |       |      |
             ```
             """)
-        st.markdown("##### Multiple Children")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Multiple_Children.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Multiple Children", "Multiple_Children.jpg", """
             ```
             Individuals Table:  Relationships Table:
             |id  |gender|       |p1 |p2 |children      |
@@ -76,12 +73,8 @@ def render_instructions(L):
             |II-3|Nn    |       Unknown number of males and females
             ```
             """)
-        st.markdown("##### Affected Status")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Affected_status.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Affected Status", "Affected_status.jpg", """
             ```
             Individuals Table:         Relationships Table:
             |id  |gender|affected |    |p1 |p2 |children           |
@@ -93,12 +86,8 @@ def render_instructions(L):
             |II-4|M     |A4-1,A4-3|    A4-1,A4-3: affected in 1st and 3rd diseases of 4 diseases
             ```
             """)
-        st.markdown("##### Pregnancy")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Pregnancy.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Pregnancy", "Pregnancy.jpg", """
             ```
             Individuals Table:         Relationships Table:
             |id  |gender|pregnancy|    |p1 |p2 |children|
@@ -107,12 +96,8 @@ def render_instructions(L):
             |II-1|N     |    x    |    Pregnancy
             ```
             """)
-        st.markdown("##### Abortion")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Abortion.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Abortion", "Abortion.jpg", """
             ```
             Individuals Table:         Relationships Table:
             |id  |gender|deceased|     |p1 |p2 |children |
@@ -122,12 +107,8 @@ def render_instructions(L):
             |II-2|A     |   x    |     Artificial Abortion
             ```
             """)
-        st.markdown("##### Divorce")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Divorce.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Divorce", "Divorce.jpg", """
             ```
             Individuals Table:   Relationships Table:
             |id  |gender|        |p1 |p2 |children|divorced|
@@ -137,12 +118,8 @@ def render_instructions(L):
                                  D: divorced line in the middle
             ```
             """)
-        st.markdown("##### Multiple Births")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Multiple.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Multiple Births", "Multiple.jpg", """
             ```
             Individuals Table:   Relationships Table:
             |id  |gender|        |p1 |p2 |children |multiples            |
@@ -152,12 +129,8 @@ def render_instructions(L):
             |II-2|M     |        unknown: unknown type
             ```
             """)
-        st.markdown("##### Infertilty/No Children")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Infertilty.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Infertilty/No Children", "Infertilty.jpg", """
             ```
             Individuals Table:  Relationships Table:
             |id  |gender|       |p1 |p2 |children |
@@ -167,12 +140,8 @@ def render_instructions(L):
             |II-2|NC    |       No Children
             ```
             """)
-        st.markdown("##### Donor")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Donor.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Donor", "Donor.jpg", """
             ```
             Individuals Table:      Relationships Table:
             |id  |gender|donor|     |p1 |p2 |children|
@@ -182,12 +151,8 @@ def render_instructions(L):
             |II-1|F     |     |
             ```
             """)
-        st.markdown("##### Surrogate")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Surrogate.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Surrogate", "Surrogate.jpg", """
             ```
             Individuals Table:          Relationships Table:
             |id  |gender|surrogate|     |p1 |p2 |children|
@@ -197,12 +162,8 @@ def render_instructions(L):
             |II-1|F     |         |
             ```
             """)
-        st.markdown("##### Adoption")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Adoption.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Adoption", "Adoption.jpg", """
             ```
             Individuals Table:  Relationships Table:
             |id  |gender|       |p1 |p2 |children|adopted_in |adopted_out|
@@ -212,12 +173,8 @@ def render_instructions(L):
             |II-2|M     |       Adopted Out
             ```
             """)
-        st.markdown("##### Consanguinity")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Consanguinity.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Consanguinity", "Consanguinity.jpg", """
             ```
             Individuals Table:   Relationships Table:
             |id  |gender|        |p1 |p2 |children|consanguinity|
@@ -226,12 +183,8 @@ def render_instructions(L):
             |II-1|F     |
             ```
             """)
-        st.markdown("##### Comments / Metadata")
-        col1, col2 = st.columns([1, 2])
-        with col1:
-            st.image(f"{IMG_BASE}Comments.jpg", width=400)
-        with col2:
-            st.markdown("""
+
+        render_section("Comments / Metadata", "Comments.jpg", """
             ```
             $\mathbf{BoldText}$
             $\mathit{ItalicText}$
