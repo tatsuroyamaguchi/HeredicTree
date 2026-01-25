@@ -137,7 +137,6 @@ def prepare_individual_dataframe(json_data):
     Returns:
         pd.DataFrame: Processed dataframe
     """
-    # リストがない場合は空リストで処理
     data_list = json_data.get("individual", [])
     df_ind = pd.DataFrame(data_list)
     
@@ -149,7 +148,7 @@ def prepare_individual_dataframe(json_data):
         if col not in df_ind.columns:
             df_ind[col] = ""
         else:
-            df_ind[col] = df_ind[col].astype(str).replace("nan", "")
+            df_ind[col] = df_ind[col].astype(str).replace(["nan", "None"], "")
     
     # Initialize boolean columns
     for col in bool_cols:
@@ -206,7 +205,7 @@ def prepare_relationships_dataframe(json_data):
     if "note_rel" not in df_rel.columns:
         df_rel["note_rel"] = ""
     else:
-        df_rel["note_rel"] = df_rel["note_rel"].astype(str).replace("nan", "")
+        df_rel["note_rel"] = df_rel["note_rel"].astype(str).replace(["nan", "None"], "")
     
     # Process consanguinity column
     if "consanguinity" not in df_rel.columns:
@@ -238,6 +237,9 @@ def process_individuals(df_ind):
     bool_fields = ["proband", "client", "documented", "deceased", "pregnancy", "carrier", "donor", "surrogate"]
     
     for row in individuals:
+        for key, value in row.items():
+            if value is None:
+                row[key] = ""
         # Normalize boolean fields
         for field in bool_fields:
             row[field] = normalize_boolean(row.get(field))
