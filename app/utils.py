@@ -4,7 +4,7 @@ import platform
 import os
 import pandas as pd
 import logging
-import copy  # 追加
+import copy
 
 from parameter import FONT_FILES, SYSTEM_FONTS
 
@@ -141,7 +141,7 @@ def prepare_individual_dataframe(json_data):
     data_list = json_data.get("individual", [])
     df_ind = pd.DataFrame(data_list)
     
-    str_cols = ["id", "gender", "affected", "label"]
+    str_cols = ["id", "gender", "affected", "label", "note_idv"]
     bool_cols = ["proband", "client", "carrier", "documented", "deceased", "pregnancy", "donor", "surrogate"]
     
     # Initialize string columns
@@ -179,7 +179,7 @@ def prepare_relationships_dataframe(json_data):
         # Initialize divorced field
         if "divorced" not in r:
             r["divorced"] = ""
-        
+            
         # Process children as comma-separated string
         r["children"] = ",".join(r.get("children", []))
         
@@ -202,6 +202,12 @@ def prepare_relationships_dataframe(json_data):
     
     df_rel = pd.DataFrame(processed_rels)
     
+    # Handle note_rel column (Ensure it exists)
+    if "note_rel" not in df_rel.columns:
+        df_rel["note_rel"] = ""
+    else:
+        df_rel["note_rel"] = df_rel["note_rel"].astype(str).replace("nan", "")
+    
     # Process consanguinity column
     if "consanguinity" not in df_rel.columns:
         df_rel["consanguinity"] = False
@@ -212,7 +218,17 @@ def prepare_relationships_dataframe(json_data):
             lambda x: True if str(x).strip().lower() == 'true' or x is True else False
         )
         df_rel["consanguinity"] = df_rel["consanguinity"].astype(bool)
+
+    # --- Reorder columns: Place note_rel after children ---
+    desired_order = ["p1", "p2", "children", "note_rel"]
+    current_cols = df_rel.columns.tolist()
     
+    # 優先順位のある列 + その他の列 で並べ替え
+    new_order = [c for c in desired_order if c in current_cols] + \
+                [c for c in current_cols if c not in desired_order]
+    
+    df_rel = df_rel[new_order]
+        
     return df_rel
 
 
