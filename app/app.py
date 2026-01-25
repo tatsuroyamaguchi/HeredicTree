@@ -23,7 +23,7 @@ def clear_matplotlib_cache():
     """Clear matplotlib cache directory."""
     cache_dir = mpl.get_cachedir()
     if os.path.exists(cache_dir):
-        shutil.rmtree(cache_dir)
+        shutil.rmtree(cache_dir, ignore_errors=True)
 
 
 def initialize_session_state():
