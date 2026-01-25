@@ -27,6 +27,26 @@ You can use HeredicTree directly in your web browser without any installation.
 
 ---
 
+## Format / フォーマット
+
+| Individuals | Example | Relationships | Example |
+|-------------|----------------|---------------|----------------|
+| **id** | I-2 | **p1** | I-1 |
+| **gender** | M, F, N | **p2** | I-2 |
+| **affected** | A, A2-1 | **children** | II-1,II-2 |
+| **label** | 46y. CRC | **note for relationships** | free comments |
+| **note for individuals** | free comments | **divorced** | D_p1 |
+| **proband** | check or blank | **multiples** | II-1+II-2:monozygotic |
+| **client** | check or blank | **adopted_in** | II-1 |
+| **carrier** | check or blank | **adopted_out** | II-2 |
+| **documented** | check or blank | **consanguinity** | check or blank |
+| **deceased** | check or blank |  |  |
+| **pregnancy** | check or blank |  |  |
+| **donor** | check or blank |  |  |
+| **surrogate** | check or blank |  |  |
+
+---
+
 ## Quick Start / クイックスタート
 
 ### Using Docker / Dockerを使用する場合
@@ -166,6 +186,8 @@ HeredicTreeは家系図データにJSON形式を使用し、3つの主要セク�
 
 ## Version History / バージョン履歴
 
+- **v20260126** - Implemented Notes feature. / Note機能を搭載
+- **v20260125** - Made Proband and Client marker size adjustments independent. /　発端者とクライエントのサイズ調整を独立
 - **v20260124** - Web version released (Stlite) / Web版公開
 - **v20260118** - Easy Pedigree Generator / 簡易家系図作成機能搭載
 - **v20260107** - Initial public release / 初回公開リリース
