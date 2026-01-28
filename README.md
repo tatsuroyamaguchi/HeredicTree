@@ -218,57 +218,39 @@ The author assumes no responsibility for any health issues, disadvantages, or tr
 
 ## License / ライセンス
 
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
-このHeredicTreeは、[クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス][cc-by-nc-sa]の下に提供されています。
+本プロジェクトは、**GNU General Public License v3.0 (GPL-3.0)** の下でライセンスされています。
 
 ### License Summary / ライセンス概要
 
-**You are free to / 以下の条件で自由に利用可能：**
+**Permissions / 許可されること:**
+- ✅ **Commercial Use** / 商用利用
+- ✅ **Modification** / 修正・改変
+- ✅ **Distribution** / 再頒布
+- ✅ **Private Use** / 私的利用
 
-- **Share** — Copy and redistribute the material / 共有 — 複製・再配布
-- **Adapt** — Remix, transform, and build upon the material / 翻案 — 改変・二次創作
+**Conditions / 条件:**
+- ℹ️ **Disclose Source** / ソースコードの公開義務 (改変して配布する場合)
+- ℹ️ **License and Copyright Notice** / ライセンスと著作権の表示
+- ℹ️ **Same License** / 同一ライセンスでの配布 (コピーレフト)
 
-**Under the following terms / 以下の条件に従う必要があります：**
+**Limitations / 制限（無保証）:**
+- ⚠️ **Liability** / 責任
+- ⚠️ **Warranty** / 保証
 
-- **Attribution (BY)** — You must give appropriate credit / 表示 — 適切なクレジットを表示
-- **NonCommercial (NC)** — You may not use the material for commercial purposes / 非営利 — 営利目的での利用禁止
-- **ShareAlike (SA)** — Distribute derivative works under the same license / 継承 — 同一ライセンスで配布
+For more details, please see the [LICENSE](LICENSE) file or visit [GNU.org](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+詳細はリポジトリ内の [LICENSE](LICENSE) ファイル、または [GNU.org](https://www.gnu.org/licenses/gpl-3.0.ja.html) を参照してください。
 
 ### Credit / クレジット表示
 
 ```
-Copyright (c) 2025 Tatsuro Yamaguchi
-HeredicTree is licensed under CC BY-NC-SA 4.0
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+Copyright (c) 2025 Tatsuro Yamaguchi 
+HeredicTree is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 ```
-
-### Important Notes / 重要事項
-
-**Commercial Use Restrictions / 営利利用の制限：**
-
-The following are considered commercial use and are **NOT permitted** without explicit permission:
-
-以下は営利目的とみなされ、明示的な許可なしには**許可されません**：
-
-- Publication, reproduction, or partial use in commercial contexts / 商業的な文脈での掲載・転載・一部利用
-- Posting on corporate social media accounts / 企業アカウントでのSNS掲載
-- Use in corporate seminars or presentations for customer acquisition / 企業主催の集客セミナー・講演での利用
-
-**Exception / 例外：**
-Internal use for employee training within a company is permitted.
-企業内での社員教育目的での利用は可能です。
-
-### Full License / 完全なライセンス条項
-
-- [Commons Deed (Human-readable summary)][cc-by-nc-sa]
-- [Legal Code (Full license)][cc-by-nc-sa-legal]
-
-[cc-by-nc-sa]: https://creativecommons.org/licenses/by-nc-sa/4.0/
-[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
-[cc-by-nc-sa-legal]: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 ---
 
@@ -280,6 +262,6 @@ For questions or licensing inquiries, please open an issue on GitHub.
 
 ---
 
-**HeredicTree** - Professional Pedigree Chart Creation Tool
+**HeredicTree** - Pedigree Generation Tool
 
 Copyright (c) 2026 Tatsuro Yamaguchi
