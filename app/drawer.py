@@ -292,24 +292,33 @@ def draw_pedigree_chart(engine_nodes, relationships, config, meta=None):
             
         # --- ドナー接続線の描画 (直線) ---
         # 親がドナーの場合、親から子供たちへ直線を引く
-        if (p1_is_donor and valid_children) or (p2_is_donor and valid_children):
-            x_d, y_d = get_pos(p1)
-            for cid in valid_children:
-                xc, yc = get_pos(cid)
-                try:
-                    is_single_child = (count == 1)
-                except NameError:
-                    is_single_child = True
+        # ドナーの親のリストを作成
+        donor_parents = []
+        if p1_is_donor:
+            donor_parents.append(p1)
+        if p2_is_donor:
+            donor_parents.append(p2)
 
-                if is_single_child:
-                    # シンボルの中心(x_d, y_d) から 子供のシンボルの上縁へ直線を引く
-                    ax.add_line(Line2D([x_d, xc], [y_d, yc+config['symbol_size'] / 2], color='black', lw=lw, zorder=5))
-                else:
-                    # sibship lineの高さからドナーのシンボルに直線を引く
-                    c_gen = min([engine_nodes[c]["gen"] for c in valid_children], default=gen1+1)
-                    child_y_level = - (c_gen * gen_height)
-                    sibship_y = child_y_level + (gen_height * 0.3) 
-                    ax.add_line(Line2D([x_d, xc], [y_d, sibship_y], color='black', lw=lw, zorder=5))
+        if donor_parents and valid_children:
+            is_single_child = (len(valid_children) == 1)
+            for dp in donor_parents:
+                x_d, y_d = get_pos(dp)
+                if x_d is None or y_d is None:
+                    continue
+                for cid in valid_children:
+                    xc, yc = get_pos(cid)
+                    if xc is None or yc is None:
+                        continue
+
+                    if is_single_child:
+                        # シンボルの中心(x_d, y_d) から 子供のシンボルの上縁へ直線を引く
+                        ax.add_line(Line2D([x_d, xc], [y_d, yc+config['symbol_size'] / 2], color='black', lw=lw, zorder=5))
+                    else:
+                        # sibship lineの高さからドナーのシンボルに直線を引く
+                        c_gen = min([engine_nodes[c]["gen"] for c in valid_children], default=engine_nodes[dp]["gen"]+1)
+                        child_y_level = - (c_gen * gen_height)
+                        sibship_y = child_y_level + (gen_height * 0.3) 
+                        ax.add_line(Line2D([x_d, xc], [y_d, sibship_y], color='black', lw=lw, zorder=5))
 
         # --- 通常のカギ型配線の準備 ---
         # ドナーである親は、通常のカギ型配線ロジック上の「親」としては扱わない（Noneにする）
