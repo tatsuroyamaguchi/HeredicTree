@@ -94,7 +94,7 @@ def load_sample_data(data_content, success_message):
         update_layout_params_from_json(data_content)
     
     clear_table_cache()
-    st.sidebar.success(success_message)
+    st.session_state["success_message"] = success_message
     st.session_state[UPLOADER_KEY] += 1
     st.rerun()
 
@@ -222,13 +222,17 @@ def render_layout_settings(L):
         'adjustment_iterations': st.sidebar.number_input(L["label_ai"], 1, 20, step=1, key="ai_slider", help=L["help_ai"]),
     }
     
+    current_priority = st.session_state.get('lp_radio', 'Children to Parents (Top-down)')
+    default_index = 0 if current_priority == 'Children to Parents (Top-down)' else 1
+
     layout_priority_display = st.sidebar.radio(
-        L["label_lp"], options=L["lp_options"], key="lp_radio_display", help=L["help_lp"]
+        L["label_lp"], options=L["lp_options"], index=default_index, help=L["help_lp"]
     )
     
     layout_priority = (
         "Children to Parents (Top-down)" if layout_priority_display == L["lp_options"][0] else "Parents to Children (Bottom-up)"
     )
+    st.session_state['lp_radio'] = layout_priority
     
     st.sidebar.subheader(L["sub_visual"])
     
@@ -409,6 +413,9 @@ def main():
     )
     
     initialize_session_state()
+
+    if "success_message" in st.session_state:
+        st.sidebar.success(st.session_state.pop("success_message"))
 
     L = LANGUAGES[st.session_state[LANG_KEY]]
     
