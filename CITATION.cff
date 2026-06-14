@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+
+message: "If you use this software, please cite it as below."
+
+authors:
+  - family-names: "Yamaguchi"
+    given-names: "Tatsuro"
+    orcid: "https://orcid.org/0000-0001-8454-1995"
+  - family-names: "Kawai"
+    given-names: "Kazushige"
+    orcid: "https://orcid.org/0000-0002-5881-0036"
+  - family-names: "Sasaki"
+    given-names: "Kazuhito"
+    orcid: "https://orcid.org/0000-0003-3569-6944"
+  - family-names: "Mori"
+    given-names: "Yoshiko"
+    orcid: "https://orcid.org/0000-0003-4948-8142"
+  - family-names: "Yamada"
+    given-names: "Takeshi"
+    orcid: "https://orcid.org/0000-0002-1436-7482"
+  - family-names: "Arai"
+    given-names: "Masami"
+    orcid: "https://orcid.org/0000-0001-7544-4536"
+  - family-names: "Aruga"
+    given-names: "Tomoyuki"
+    orcid: "https://orcid.org/0000-0003-3442-8972"
+  - family-names: "Hirata"
+    given-names: "Keiji"
+    orcid: "https://orcid.org/0000-0001-6461-5109"
+  - family-names: "Ishida"
+    given-names: "Hideyuki"
+
+title: "HeredicTree: A Python-based standardized pedigree drawing tool"
+
+version: "v1.0.0"
+
+date-released: "2026-05-28"
+
+repository-code: "https://github.com/tatsuroyamaguchi/HeredicTree"
+
+license: "GPL-3.0"
+
+keywords:
+  - pedigree
+  - hereditary cancer
+  - genetics
+  - family history
+  - python
