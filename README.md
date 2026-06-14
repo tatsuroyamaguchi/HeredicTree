@@ -4,6 +4,9 @@ A web-based pedigree chart creation application following National Society of Ge
 
 家系図作成アプリケーション（全米遺伝カウンセリング学会標準記載法準拠）
 
+引用の際は、以下の記載をお願いします。
+Yamaguchi, T., Kawai, K., Sasaki, K., Mori, Y., Yamada, T., Arai, M., Aruga, T., Hirata, K., & Ishida, H. (2026). HeredicTree: A Python-based standardized pedigree drawing tool (Version v1.0.0) [Computer software]. https://github.com/tatsuroyamaguchi/HeredicTree
+
 ---
 
 ## Use Online / ブラウザで今すぐ使う
