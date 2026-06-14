@@ -256,6 +256,7 @@ HeredicTree is free software: you can redistribute it and/or modify it under the
 ## Citation
 
 引用の際は、以下の記載をお願いします。
+
 If you use **HeredicTree** in your research, please cite it as follows:
 
 ### APA (7th edition)
