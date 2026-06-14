@@ -191,6 +191,7 @@ HeredicTreeは家系図データにJSON形式を使用し、3つの主要セク�
 - **v20260124** - Web version released (Stlite) / Web版公開
 - **v20260118** - Easy Pedigree Generator / 簡易家系図作成機能搭載
 - **v20260107** - Initial public release / 初回公開リリース
+- **v1.0.0** - Zenodo release / zenodoリリース
 
 ---
 
