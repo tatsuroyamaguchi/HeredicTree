@@ -336,9 +336,9 @@ def create_download_button(fig, format_info):
     )
 
 
-def render_pedigree_output(positioned_nodes, relationships, live_config, latest_json_data):
+def render_pedigree_output(positioned_nodes, relationships, live_config, latest_json_data, L):
     """Render pedigree chart and download options."""
-    st.subheader("Pedigree Chart")
+    st.subheader(L["chart_header"])
     
     fig = draw_pedigree_chart(
         positioned_nodes,
@@ -348,7 +348,7 @@ def render_pedigree_output(positioned_nodes, relationships, live_config, latest_
     )
     st.pyplot(fig)
     
-    st.markdown("### Download Options")
+    st.markdown(f"### {L['download_header']}")
     
     formats = [
         {"label": "SVG", "ext": "svg", "mime": "image/svg+xml"},
@@ -372,6 +372,27 @@ def render_pedigree_output(positioned_nodes, relationships, live_config, latest_
             mime="application/json",
             use_container_width=True
         )
+
+    # === Citation Section ===
+    st.markdown("---")
+    st.markdown(f"### {L['citation_header']}")
+    st.write(L["citation_desc"])
+    
+    st.markdown("**APA (7th edition)**")
+    st.code("Yamaguchi, T., Kawai, K., Sasaki, K., Mori, Y., Yamada, T., Arai, M., Aruga, T., Hirata, K., & Ishida, H. (2026). HeredicTree: A Python-based standardized pedigree drawing tool (Version v1.0.0) [Computer software]. GitHub. https://github.com/tatsuroyamaguchi/HeredicTree", language="")
+    
+    st.markdown("**Vancouver**")
+    st.code("Yamaguchi T, Kawai K, Sasaki K, Mori Y, Yamada T, Arai M, Aruga T, Hirata K, Ishida H. HeredicTree: A Python-based standardized pedigree drawing tool [computer software]. Version 1.0.0. GitHub; 2026. Available from: https://github.com/tatsuroyamaguchi/HeredicTree", language="")
+    
+    st.markdown("**BibTeX**")
+    st.code("""@software{yamaguchi2026heredictree,
+  author = {Yamaguchi, Tatsuro and Kawai, Koji and Sasaki, Kenta and Mori, Yoshinori and Yamada, Takashi and Arai, Masahiro and Aruga, Tetsuya and Hirata, Koji and Ishida, Hiroshi},
+  title = {HeredicTree: A Python-based standardized pedigree drawing tool},
+  version = {1.0.0},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/tatsuroyamaguchi/HeredicTree}
+}""", language="bibtex")
 
 
 def render_readme():
@@ -447,7 +468,8 @@ def main():
             positioned_nodes,
             latest_json_data["relationships"],
             live_config,
-            latest_json_data
+            latest_json_data,
+            L
         )
     
     render_readme()
