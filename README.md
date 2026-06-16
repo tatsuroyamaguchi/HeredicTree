@@ -191,7 +191,6 @@ HeredicTreeは家系図データにJSON形式を使用し、3つの主要セク�
 - **v20260124** - Web version released (Stlite) / Web版公開
 - **v20260118** - Easy Pedigree Generator / 簡易家系図作成機能搭載
 - **v20260107** - Initial public release / 初回公開リリース
-- **v1.0.0** - Zenodo release / zenodoリリース
 
 ---
 
@@ -214,6 +213,44 @@ The author assumes no responsibility for any health issues, disadvantages, or tr
 本プログラムのソースコードの著作権は山口達郎に帰属しますが、正確性、完全性、有効性、信頼性、安全性、適法性、特定の目的への適合性を含む、事実上又は法律上の一切の不具合がないことにつき、明示的にも黙示的にも保証は行いません。なお、セキュリティ等への欠陥・エラー・バグがないことについても保証しません。
 
 したがって、本プログラムの使用が原因で発生した健康被害や不利益、トラブルについては、山口達郎は一切の責任を負いません。
+
+---
+
+## Citation / 引用
+
+**English:**  
+If you use HeredicTree in your research, please cite it as follows:
+
+**日本語：**  
+引用の際は、以下の記載をお願いします。
+
+**Español:**  
+Si utiliza HeredicTree en su investigación, por favor cítelo de la siguiente manera:
+
+**Deutsch:**  
+Wenn Sie HeredicTree in Ihrer Forschung verwenden, zitieren Sie es bitte wie folgt:
+
+### APA (7th edition)
+```text
+Yamaguchi, T., Kawai, K., Sasaki, K., Mori, Y., Yamada, T., Arai, M., Aruga, T., Hirata, K., & Ishida, H. (2026). HeredicTree: A Python-based standardized pedigree drawing tool (Version v1.0.0) [Computer software]. GitHub. https://github.com/tatsuroyamaguchi/HeredicTree
+```
+
+### Vancouver
+```text
+Yamaguchi T, Kawai K, Sasaki K, Mori Y, Yamada T, Arai M, Aruga T, Hirata K, Ishida H. HeredicTree: A Python-based standardized pedigree drawing tool [computer software]. Version 1.0.0. GitHub; 2026. Available from: https://github.com/tatsuroyamaguchi/HeredicTree
+```
+
+### BibTeX
+```bibtex
+@software{yamaguchi2026heredictree,
+  author = {Yamaguchi, Tatsuro and Kawai, Koji and Sasaki, Kenta and Mori, Yoshinori and Yamada, Takashi and Arai, Masahiro and Aruga, Tetsuya and Hirata, Koji and Ishida, Hiroshi},
+  title = {HeredicTree: A Python-based standardized pedigree drawing tool},
+  version = {1.0.0},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/tatsuroyamaguchi/HeredicTree}
+}
+```
 
 ---
 
@@ -251,34 +288,6 @@ For more details, please see the [LICENSE](LICENSE) file or visit [GNU.org](http
 ```
 Copyright (c) 2025 Tatsuro Yamaguchi 
 HeredicTree is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-```
-
----
-## Citation
-
-引用の際は、以下の記載をお願いします。
-
-If you use **HeredicTree** in your research, please cite it as follows:
-
-### APA (7th edition)
-
-> Yamaguchi, T., Kawai, K., Sasaki, K., Mori, Y., Yamada, T., Arai, M., Aruga, T., Hirata, K., & Ishida, H. (2026). *HeredicTree: A Python-based standardized pedigree drawing tool* (Version v1.0.0) [Computer software]. GitHub. https://github.com/tatsuroyamaguchi/HeredicTree
-
-### Vancouver
-
-> Yamaguchi T, Kawai K, Sasaki K, Mori Y, Yamada T, Arai M, Aruga T, Hirata K, Ishida H. HeredicTree: A Python-based standardized pedigree drawing tool [computer software]. Version 1.0.0. GitHub; 2026. Available from: https://github.com/tatsuroyamaguchi/HeredicTree
-
-### BibTeX
-
-```bibtex
-@software{yamaguchi2026heredictree,
-  author = {Yamaguchi, Tatsuro and Kawai, Koji and Sasaki, Kenta and Mori, Yoshinori and Yamada, Takashi and Arai, Masahiro and Aruga, Tetsuya and Hirata, Koji and Ishida, Hiroshi},
-  title = {HeredicTree: A Python-based standardized pedigree drawing tool},
-  version = {1.0.0},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/tatsuroyamaguchi/HeredicTree}
-}
 ```
 
 ---
