@@ -56,9 +56,10 @@ LANGUAGES = {
         "sub_ind": "Individuals",
         "sub_rel": "Relationships",
         "chart_header": "Pedigree Chart",
-        "download_header": "Download Options",
         "btn_json": "Download JSON",
-        "success_load": "Loaded {} Data!"
+        "success_load": "Loaded {} Data!",
+        "citation_header": "Citation",
+        "citation_desc": "If you use HeredicTree in your research, please cite it as follows:"
     },
     "Japanese": {
         "title": "HeredicTree",
@@ -115,9 +116,10 @@ LANGUAGES = {
         "sub_ind": "個人データ (Individuals)",
         "sub_rel": "家族関係 (Relationships)",
         "chart_header": "家系図プレビュー",
-        "download_header": "ダウンロード・オプション",
         "btn_json": "JSONファイルをダウンロード",
-        "success_load": "{}データを読み込みました！"
+        "success_load": "{}データを読み込みました！",
+        "citation_header": "文献引用",
+        "citation_desc": "引用の際は、以下の記載をお願いします。"
     },
     "Español": {
         "title": "HeredicTree",
@@ -174,9 +176,10 @@ LANGUAGES = {
         "sub_ind": "Individuos",
         "sub_rel": "Relaciones",
         "chart_header": "Gráfico de pedigree",
-        "download_header": "Opciones de descarga",
         "btn_json": "Descargar JSON",
-        "success_load": "¡Datos de {} cargados!"
+        "success_load": "¡Datos de {} cargados!",
+        "citation_header": "Citación",
+        "citation_desc": "Si utiliza HeredicTree en su investigación, por favor cítelo de la siguiente manera:"
     },
     "Deutsch": {
         "title": "HeredicTree",
@@ -233,8 +236,9 @@ LANGUAGES = {
         "sub_ind": "Personen",
         "sub_rel": "Beziehungen",
         "chart_header": "Pedigree-Diagramm",
-        "download_header": "Download-Optionen",
         "btn_json": "JSON herunterladen",
-        "success_load": "{} Daten geladen!"
+        "success_load": "{} Daten geladen!",
+        "citation_header": "Zitierweise",
+        "citation_desc": "Wenn Sie HeredicTree in Ihrer Forschung verwenden, zitieren Sie es bitte wie folgt:"
     }
 }
