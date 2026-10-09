@@ -321,7 +321,7 @@ def create_download_button(fig, format_info):
     buf = io.BytesIO()
     
     if format_info["ext"] in ["svg", "tiff", "pdf"]:
-        fig.savefig(buf, format=format_info["ext"], bbox_inches='tight')
+        fig.savefig(buf, format=format_info["ext"], bbox_inches='tight', dpi=300)
     else:
         fig.savefig(buf, format=format_info["ext"], bbox_inches='tight', dpi=300)
     
